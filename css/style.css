@@ -1,18 +1,206 @@
 /* Main Stylesheet */
 
+@import url(https://fonts.googleapis.com/css?family=Overlock:400,700italic);
+@import url(https://fonts.googleapis.com/css?family=Marck+Script);
 
-/* Global styling, everything is site wide */
+/* header */
 
-body {
-  background: #E4E4BF; 
+header {
+  position: fixed;
+  width: 100%;
+  /*   max-width: 100%; */
+  background: lightblue;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 100;
 }
 
-img {
+body {
+  background: url(https://raw.githubusercontent.com/jxqr97/jxqr97.github.io/master/img/Style%20Tile/ricepaper/ricepaper.png);
+  background-size: cover;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.my-pic {
+  padding-top: 8.5em;
+}
+
+#resume,
+#portfolio {
+  padding-top: 4em;
+}
+
+
+/* Images and Buttons */
+
+.my-pic {
   width: 25%;
 }
 
+.linkedin img{
+  width: 1.875em;
+  display: inline-block;
+  
+}
+
+.twitter img{
+  width: 1.875em;
+  display: inline-block;
+}
+
+.email-me img{
+  width: 1.875em;
+  display: inline-block;
+  border-radius: 25%;
+}
+
+
+/* Navigaion */
+
+nav a {
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul{
+  margin: 0 auto;
+  padding: 0;
+}
+
+a:link,
+a:visited {
+  color: #69109A;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D72B5B;
+  text-decoration: underline;
+}
+
+#resume,
+#portfolio {
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+
 /* Typography */
 
-/* Homepage */
+body {
+  font-family: 'Marck Script', cursive;
+  font-size: 1.5em;
+}
 
-/* Resume */
+p {
+  font-family: 'Overlock', cursive;
+  font-weight: bold;
+  color: #333;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 1.05em;
+  width: 90%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+/* Bio */
+
+
+/* resume */
+
+.resume-list {
+  display: block;
+  font-family: 'Overlock', cursive;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+
+/* Portfolio */
+
+.portfolio-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.portfolio-grid li {
+  display: inline-block;
+  margin: 5px;
+  vertical-align: top;
+  width: 266px;
+  height: 200px;
+}
+
+.portfolio-grid li > a,
+.portfolio-grid li > a img {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-grid li > a img:hover {
+  border-radius: 60%;
+}
+
+
+/* Responsive Page Mobile/Tablet*/
+
+@media screen and (max-width: 481px) {
+  body {
+    background: lightgrey;
+    width: 100%;
+    height: 100%;
+  }
+  header {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    display: block;
+    }
+  
+  /* Navigation   */
+  nav ul {
+    margin: 0;
+  }
+  nav {
+    padding: none;
+  }
+  
+.portfolio-grid li > a,
+.portfolio-grid li > a img {
+  transition: none;
+  }
+  
+ .portfolio-grid li > a img:hover {
+   border-radius: none;
+  }
+  
+/*   .clear {
+    clear: both;
+  } */
