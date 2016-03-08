@@ -8,7 +8,9 @@ footer {
   margin-top: 5em;
 }
 
+
 /* header */
+
 header {
   position: fixed;
   width: 100%;
@@ -19,6 +21,11 @@ header {
   z-index: 100;
 }
 
+blockquote{
+  font-size: .9em;
+}
+
+
 body {
   background: url(https://raw.githubusercontent.com/jxqr97/jxqr97.github.io/master/img/Style%20Tile/ricepaper/ricepaper.png);
   background-size: cover;
@@ -27,7 +34,7 @@ body {
 }
 
 .my-pic {
-  padding-top: 8.5em;
+  padding-top: 8.4em;
 }
 
 #resume,
@@ -126,6 +133,7 @@ p {
   margin: 0 auto;
 }
 
+
 /* resume */
 
 .resume-list {
@@ -145,7 +153,7 @@ p {
   padding: 0;
   margin: 0 auto;
   text-align: center;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .portfolio-grid li {
@@ -164,19 +172,19 @@ p {
   outline: none;
   display: block;
   position: relative;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .portfolio-grid li > a img:hover {
-  border-radius: 60%;
+  border-radius: 50%;
+  z-index: 1;
 }
-
 
 /* Responsive Page Mobile/Tablet*/
 
 @media screen and (max-width: 481px) {
   body {
-    background: lightgrey;
+    background: #e1e1e1;
     width: 100%;
     height: 100%;
   }
@@ -194,18 +202,13 @@ p {
   nav {
     padding: none;
   }
-/*  Portfolio  */
+  
+  /*  Portfolio  */
   .portfolio-grid li > a,
   .portfolio-grid li > a img {
     transition: none;
-    width: 266px;
-    height: 200px;
   }
-
- .portfolio-grid li > a img:hover {
-  border-radius: none;
- }
+  .portfolio-grid li > a img:hover {
+    border-radius: 0%;
+  }
 }
-
-
-
