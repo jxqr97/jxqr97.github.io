@@ -182,7 +182,7 @@ p {
 
 /* Responsive Page Mobile/Tablet*/
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 770px) {
   body {
     background: #e1e1e1;
     width: 100%;
