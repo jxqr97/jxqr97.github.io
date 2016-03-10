@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Marck+Script);
 
 /* Footer */
+
 footer {
   margin-top: 5em;
 }
@@ -18,13 +19,12 @@ header {
   background: lightblue;
   margin: 0 auto;
   text-align: center;
-  z-index: 100;
+  z-index: 6;
 }
 
-blockquote{
+blockquote {
   font-size: .9em;
 }
-
 
 body {
   background: url(https://raw.githubusercontent.com/jxqr97/jxqr97.github.io/master/img/Style%20Tile/ricepaper/ricepaper.png);
@@ -34,7 +34,8 @@ body {
 }
 
 .my-pic {
-  padding-top: 8.4em;
+  padding-top: 7.5em;
+  width: 25%;
 }
 
 #resume,
@@ -44,10 +45,6 @@ body {
 
 
 /* Images and Buttons */
-
-.my-pic {
-  width: 25%;
-}
 
 .icons a:hover {
   text-decoration: none;
@@ -158,7 +155,8 @@ p {
 
 .portfolio-grid li {
   display: inline-block;
-  margin: 5px;
+  margin: 18px;
+  font-size: .75em;
   vertical-align: top;
   width: 266px;
   height: 200px;
@@ -177,8 +175,24 @@ p {
 
 .portfolio-grid li > a img:hover {
   border-radius: 50%;
-  z-index: 1;
+  z-index: 5;
 }
+
+figcaption {
+  width: 266px;
+  position: absolute;
+  opacity: 0;
+}
+
+li:hover figcaption {
+  opacity: 1;
+  bottom: -25px;
+  background: lightblue;
+  border-radius: 5%;
+  text-decoration: none;
+  color: #69109A;
+}
+
 
 /* Responsive Page Mobile/Tablet*/
 
@@ -202,7 +216,6 @@ p {
   nav {
     padding: none;
   }
-  
   /*  Portfolio  */
   .portfolio-grid li > a,
   .portfolio-grid li > a img {
@@ -210,5 +223,12 @@ p {
   }
   .portfolio-grid li > a img:hover {
     border-radius: 0%;
+  }
+  figcaption {
+    opacity: 1;
+  }
+  li:hover figcaption {
+  background: none;
+  border-radius: 0%;
   }
 }
